@@ -1,0 +1,11 @@
+uuid: 486fb4f1-9914-4f5f-88bb-61f3792d5e2a
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.employee_home_view
+label: 'Employee Home View'
+description: ''
+targetEntityType: node
+cache: true

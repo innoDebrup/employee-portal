@@ -1,0 +1,28 @@
+uuid: e1f55a40-607a-4cdd-aa8c-4f715c2cdb64
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.employee_skills.body
+    - node.type.employee_skills
+  module:
+    - text
+    - user
+id: node.employee_skills.default
+targetEntityType: node
+bundle: employee_skills
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden: {  }

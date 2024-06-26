@@ -1,0 +1,18 @@
+uuid: 234ab445-7423-465e-82db-7c47c7917822
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: 'Project Data'
+type: project_data
+description: 'Details about the project.'
+help: null
+new_revision: true
+preview_mode: 1
+display_submitted: false

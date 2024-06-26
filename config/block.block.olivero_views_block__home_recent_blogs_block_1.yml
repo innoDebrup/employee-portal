@@ -1,0 +1,29 @@
+uuid: 3ab23030-46b6-4967-910f-6d070389aadd
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.home_recent_blogs
+  module:
+    - system
+    - views
+  theme:
+    - olivero
+id: olivero_views_block__home_recent_blogs_block_1
+theme: olivero
+region: sidebar
+weight: 0
+provider: null
+plugin: 'views_block:home_recent_blogs-block_1'
+settings:
+  id: 'views_block:home_recent_blogs-block_1'
+  label: ''
+  label_display: visible
+  provider: views
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'

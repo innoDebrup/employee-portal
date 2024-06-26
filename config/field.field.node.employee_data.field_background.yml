@@ -1,0 +1,22 @@
+uuid: 5a2bb218-7418-4ea8-9005-1cdd0e9133bf
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_background
+    - node.type.employee_data
+  module:
+    - text
+id: node.employee_data.field_background
+field_name: field_background
+entity_type: node
+bundle: employee_data
+label: Background
+description: 'The background of the employee.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats: {  }
+field_type: text_long

@@ -1,0 +1,50 @@
+uuid: 2ba26dc5-0a87-433b-90f9-31c990b82df5
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.employee_data
+    - node.type.employee_skills
+    - node.type.project_data
+  module:
+    - admin_toolbar_search
+    - node
+    - shortcut
+    - toolbar
+id: hr
+label: HR
+weight: 5
+is_admin: null
+permissions:
+  - 'access content overview'
+  - 'access toolbar'
+  - 'administer shortcuts'
+  - 'create employee_data content'
+  - 'create employee_skills content'
+  - 'create project_data content'
+  - 'delete all revisions'
+  - 'delete any employee_data content'
+  - 'delete any employee_skills content'
+  - 'delete any project_data content'
+  - 'delete employee_data revisions'
+  - 'delete employee_skills revisions'
+  - 'delete own employee_data content'
+  - 'delete own employee_skills content'
+  - 'delete own project_data content'
+  - 'delete project_data revisions'
+  - 'edit any employee_data content'
+  - 'edit any employee_skills content'
+  - 'edit any project_data content'
+  - 'edit own employee_data content'
+  - 'edit own employee_skills content'
+  - 'edit own project_data content'
+  - 'revert all revisions'
+  - 'revert employee_data revisions'
+  - 'revert employee_skills revisions'
+  - 'revert project_data revisions'
+  - 'use admin toolbar search'
+  - 'view all revisions'
+  - 'view employee_data revisions'
+  - 'view employee_skills revisions'
+  - 'view own unpublished content'
+  - 'view project_data revisions'

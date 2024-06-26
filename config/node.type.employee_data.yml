@@ -1,0 +1,18 @@
+uuid: ebad5017-cf96-4f09-a591-1af9f8f5874f
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: 'Employee Data'
+type: employee_data
+description: 'Contains data of the employee.'
+help: null
+new_revision: true
+preview_mode: 1
+display_submitted: false

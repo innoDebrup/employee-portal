@@ -1,0 +1,11 @@
+uuid: 90ae3745-27e3-4ac5-bd76-ac3a15df3331
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.blog_view
+label: 'Blog View'
+description: 'Small view mode for blogs.'
+targetEntityType: node
+cache: true

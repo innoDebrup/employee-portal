@@ -1,0 +1,29 @@
+uuid: 7b0b44b8-adf0-4f8e-8f42-f4a3d9a3699b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_tech_skills
+    - node.type.employee_data
+    - node.type.employee_skills
+id: node.employee_data.field_tech_skills
+field_name: field_tech_skills
+entity_type: node
+bundle: employee_data
+label: 'Tech Skills'
+description: 'The Technical skills the employee has.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      employee_skills: employee_skills
+    sort:
+      field: nid
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference
