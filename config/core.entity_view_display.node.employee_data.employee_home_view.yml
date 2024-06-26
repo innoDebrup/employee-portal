@@ -1,0 +1,197 @@
+uuid: e96f5ebe-1286-4db4-b965-fc6a85710fe6
+langcode: en
+status: false
+dependencies:
+  config:
+    - core.entity_view_mode.node.employee_home_view
+    - field.field.node.employee_data.field_background
+    - field.field.node.employee_data.field_designation
+    - field.field.node.employee_data.field_goals
+    - field.field.node.employee_data.field_image
+    - field.field.node.employee_data.field_key_characteristics
+    - field.field.node.employee_data.field_tech_skills
+    - field.field.node.employee_data.layout_builder__layout
+    - image.style.medium
+    - node.type.employee_data
+  module:
+    - image
+    - layout_builder
+    - layout_discovery
+    - options
+    - text
+    - user
+third_party_settings:
+  layout_builder:
+    enabled: true
+    allow_custom: false
+    sections:
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+        components:
+          9fac9cc4-36b9-4ae3-8b9f-76ad9f5eb21e:
+            uuid: 9fac9cc4-36b9-4ae3-8b9f-76ad9f5eb21e
+            region: content
+            configuration:
+              id: 'extra_field_block:node:employee_data:links'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+            weight: 0
+            additional: {  }
+          006b8ef1-ba4f-483c-903e-d3e479a2bce3:
+            uuid: 006b8ef1-ba4f-483c-903e-d3e479a2bce3
+            region: content
+            configuration:
+              id: 'field_block:node:employee_data:field_image'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: image
+                label: hidden
+                settings:
+                  image_link: ''
+                  image_style: medium
+                  image_loading:
+                    attribute: eager
+                third_party_settings: {  }
+            weight: 1
+            additional: {  }
+          d0c4691f-3e65-4ae6-b809-4ba4ce65881d:
+            uuid: d0c4691f-3e65-4ae6-b809-4ba4ce65881d
+            region: content
+            configuration:
+              id: 'field_block:node:employee_data:field_background'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: text_default
+                label: above
+                settings: {  }
+                third_party_settings: {  }
+            weight: 2
+            additional: {  }
+          6054f4ee-4217-45cd-9cf0-12d345f7170e:
+            uuid: 6054f4ee-4217-45cd-9cf0-12d345f7170e
+            region: content
+            configuration:
+              id: 'field_block:node:employee_data:field_tech_skills'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: entity_reference_label
+                label: above
+                settings:
+                  link: true
+                third_party_settings: {  }
+            weight: 3
+            additional: {  }
+          a634a6a0-f228-444c-9088-09af419c6be4:
+            uuid: a634a6a0-f228-444c-9088-09af419c6be4
+            region: content
+            configuration:
+              id: 'field_block:node:employee_data:field_key_characteristics'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: text_default
+                label: above
+                settings: {  }
+                third_party_settings: {  }
+            weight: 4
+            additional: {  }
+          0fa7f9b1-0010-46a4-a136-fb870a3a43c0:
+            uuid: 0fa7f9b1-0010-46a4-a136-fb870a3a43c0
+            region: content
+            configuration:
+              id: 'field_block:node:employee_data:field_goals'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: basic_string
+                label: above
+                settings: {  }
+                third_party_settings: {  }
+            weight: 5
+            additional: {  }
+          eb1f6b52-7c84-4fb2-b2b5-f6915e7488a9:
+            uuid: eb1f6b52-7c84-4fb2-b2b5-f6915e7488a9
+            region: first
+            configuration:
+              id: 'field_block:node:employee_data:field_designation'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: list_default
+                label: above
+                settings: {  }
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+        third_party_settings: {  }
+id: node.employee_data.employee_home_view
+targetEntityType: node
+bundle: employee_data
+mode: employee_home_view
+content:
+  field_background:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_designation:
+    type: list_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 7
+    region: first
+  field_goals:
+    type: basic_string
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 6
+    region: content
+  field_image:
+    type: image
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: medium
+      image_loading:
+        attribute: eager
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_key_characteristics:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 5
+    region: content
+  field_tech_skills:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  layout_builder__layout: true

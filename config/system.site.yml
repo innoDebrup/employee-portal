@@ -1,0 +1,15 @@
+_core:
+  default_config_hash: ijfbzDTN4CbE7Sr-6ubWzy_t1vH4OtU1doNCLssVz-4
+langcode: en
+uuid: b2e4a823-59d7-4b38-a72a-5878b638e676
+name: 'Employee Connect'
+mail: portaladmin@employconnect.com
+slogan: ''
+page:
+  403: ''
+  404: ''
+  front: /node/33
+admin_compact_mode: false
+weight_select_max: 100
+default_langcode: en
+mail_notification: null

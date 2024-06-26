@@ -1,0 +1,205 @@
+uuid: dc83a50d-418f-43be-a053-d8d21c595e59
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.employee_data.field_background
+    - field.field.node.employee_data.field_designation
+    - field.field.node.employee_data.field_goals
+    - field.field.node.employee_data.field_image
+    - field.field.node.employee_data.field_key_characteristics
+    - field.field.node.employee_data.field_tech_skills
+    - field.field.node.employee_data.layout_builder__layout
+    - image.style.medium
+    - node.type.employee_data
+  module:
+    - image
+    - layout_builder
+    - options
+    - text
+    - user
+third_party_settings:
+  layout_builder:
+    enabled: true
+    allow_custom: true
+    sections:
+      -
+        layout_id: layout_twocol_section
+        layout_settings:
+          label: Main
+          context_mapping: {  }
+          column_widths: 67-33
+        components:
+          f7ee1c14-d5b7-49b4-9414-2892bf5ac44b:
+            uuid: f7ee1c14-d5b7-49b4-9414-2892bf5ac44b
+            region: first
+            configuration:
+              id: 'field_block:node:employee_data:field_background'
+              label: Background
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: text_default
+                label: above
+                settings: {  }
+                third_party_settings: {  }
+            weight: 2
+            additional: {  }
+          9e1bc4da-40da-407e-b418-c4c2c61a43c4:
+            uuid: 9e1bc4da-40da-407e-b418-c4c2c61a43c4
+            region: first
+            configuration:
+              id: 'field_block:node:employee_data:field_tech_skills'
+              label: 'Tech Skills'
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: entity_reference_label
+                label: above
+                settings:
+                  link: true
+                third_party_settings: {  }
+            weight: 3
+            additional: {  }
+          e520e974-5d06-41b2-b180-800aa5fa5bc9:
+            uuid: e520e974-5d06-41b2-b180-800aa5fa5bc9
+            region: first
+            configuration:
+              id: 'field_block:node:employee_data:field_key_characteristics'
+              label: 'Key Characteristics'
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: text_default
+                label: above
+                settings: {  }
+                third_party_settings: {  }
+            weight: 4
+            additional: {  }
+          fd4e3a10-2e45-4f70-b135-2bd63ffa53fc:
+            uuid: fd4e3a10-2e45-4f70-b135-2bd63ffa53fc
+            region: first
+            configuration:
+              id: 'field_block:node:employee_data:field_goals'
+              label: Goals
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: basic_string
+                label: above
+                settings: {  }
+                third_party_settings: {  }
+            weight: 5
+            additional: {  }
+          b3d1ef57-f72f-4ec7-a15b-620cc97bfe35:
+            uuid: b3d1ef57-f72f-4ec7-a15b-620cc97bfe35
+            region: second
+            configuration:
+              id: 'field_block:node:employee_data:field_image'
+              label: Image
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: image
+                label: hidden
+                settings:
+                  image_link: ''
+                  image_style: medium
+                  image_loading:
+                    attribute: lazy
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+          64157205-d521-417a-a769-d23263be7853:
+            uuid: 64157205-d521-417a-a769-d23263be7853
+            region: first
+            configuration:
+              id: 'field_block:node:employee_data:field_designation'
+              label: Designation
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: list_default
+                label: above
+                settings: {  }
+                third_party_settings: {  }
+            weight: 1
+            additional: {  }
+        third_party_settings: {  }
+id: node.employee_data.default
+targetEntityType: node
+bundle: employee_data
+mode: default
+content:
+  field_background:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_designation:
+    type: list_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 7
+    region: first
+  field_goals:
+    type: basic_string
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 6
+    region: content
+  field_image:
+    type: image
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: medium
+      image_loading:
+        attribute: eager
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_key_characteristics:
+    type: text_default
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 5
+    region: content
+  field_tech_skills:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  layout_builder__layout: true

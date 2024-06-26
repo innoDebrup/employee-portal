@@ -1,0 +1,22 @@
+uuid: 34bfed8d-fd7d-4964-9265-3ae963f822a4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_key_characteristics
+    - node.type.employee_data
+  module:
+    - text
+id: node.employee_data.field_key_characteristics
+field_name: field_key_characteristics
+entity_type: node
+bundle: employee_data
+label: 'Key Characteristics'
+description: 'The key characteristics of the employee.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats: {  }
+field_type: text_long

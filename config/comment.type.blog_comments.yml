@@ -1,0 +1,8 @@
+uuid: a75ff0f2-f27f-4f68-b997-87b98a6288a6
+langcode: en
+status: true
+dependencies: {  }
+id: blog_comments
+label: 'Blog Comments'
+target_entity_type_id: node
+description: 'Comment type for blogs'

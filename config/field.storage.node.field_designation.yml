@@ -1,0 +1,39 @@
+uuid: d18027da-4871-4753-b82f-568254db98bc
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_designation
+field_name: field_designation
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: software_trainee
+      label: 'Software Trainee'
+    -
+      value: php_developer
+      label: 'PHP Developer'
+    -
+      value: drupal_developer
+      label: 'Drupal Developer'
+    -
+      value: project_manager
+      label: 'Project Manager'
+    -
+      value: hr
+      label: HR
+    -
+      value: accounts
+      label: Accounts
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

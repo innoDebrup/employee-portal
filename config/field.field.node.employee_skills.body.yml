@@ -1,0 +1,24 @@
+uuid: cbb220e6-9a7f-4d04-999b-54e6ec95821c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.employee_skills
+  module:
+    - text
+id: node.employee_skills.body
+field_name: body
+entity_type: node
+bundle: employee_skills
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+  allowed_formats: {  }
+field_type: text_with_summary

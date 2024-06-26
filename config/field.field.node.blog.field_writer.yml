@@ -1,0 +1,29 @@
+uuid: cfb9eb52-bbb3-4528-a0f7-2053e0df6ab5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_writer
+    - node.type.blog
+    - node.type.employee_data
+id: node.blog.field_writer
+field_name: field_writer
+entity_type: node
+bundle: blog
+label: Creator
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      employee_data: employee_data
+    sort:
+      field: nid
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

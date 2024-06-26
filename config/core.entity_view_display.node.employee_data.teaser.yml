@@ -1,0 +1,46 @@
+uuid: 044bc537-0096-4d64-908a-edc8acf5bd69
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.employee_data.field_background
+    - field.field.node.employee_data.field_designation
+    - field.field.node.employee_data.field_goals
+    - field.field.node.employee_data.field_image
+    - field.field.node.employee_data.field_key_characteristics
+    - field.field.node.employee_data.field_tech_skills
+    - field.field.node.employee_data.layout_builder__layout
+    - image.style.medium
+    - node.type.employee_data
+  module:
+    - image
+    - user
+id: node.employee_data.teaser
+targetEntityType: node
+bundle: employee_data
+mode: teaser
+content:
+  field_image:
+    type: image
+    label: hidden
+    settings:
+      image_link: content
+      image_style: medium
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: -1
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_background: true
+  field_designation: true
+  field_goals: true
+  field_key_characteristics: true
+  field_tech_skills: true
+  layout_builder__layout: true

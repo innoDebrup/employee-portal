@@ -1,0 +1,18 @@
+uuid: 42e8ed95-f886-4afe-bd7b-ab8e291217df
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.employee_skills
+id: node.employee_skills.title
+field_name: title
+entity_type: node
+bundle: employee_skills
+label: Name
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

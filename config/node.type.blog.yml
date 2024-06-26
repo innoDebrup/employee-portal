@@ -1,0 +1,18 @@
+uuid: d4380fc1-3ae5-4e2c-b4aa-8138146bd54e
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: Blog
+type: blog
+description: 'Blog to be written by an Employee.'
+help: null
+new_revision: true
+preview_mode: 1
+display_submitted: false

@@ -1,0 +1,8 @@
+uuid: 978a1266-3c1e-4d4c-ab90-f7f5efbec89f
+langcode: en
+status: true
+dependencies: {  }
+id: add-menu
+label: 'Add Menu'
+description: 'Menu for adding content types'
+locked: false
